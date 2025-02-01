@@ -1,0 +1,193 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* استيراد الخطوط من Google Fonts */
+
+/* تنسيق الـ Navbar */
+.nav {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 8px 20px; /* تقليل الحواف */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav_logo {
+  font-size: 20px; /* تقليل حجم النص */
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav_items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav_item {
+  column-gap: 15px; /* تقليل المسافة بين العناصر */
+}
+
+.nav_link {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem; /* تقليل حجم النص */
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav_link:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #9b59b6;
+  color: #fff;
+  padding: 8px 15px; /* تقليل الحجم */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px; /* تقليل الحجم */
+}
+
+.button:hover {
+  background-color: #71b7e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #9b59b6;
+}
+
+
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* Responsive media query code for mobile devices */
+@media(max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+/* Responsive media query code for mobile devices */
+@media(max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}

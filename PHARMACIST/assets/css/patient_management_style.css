@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #f4f4f4;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.actions a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+.actions a:hover {
+    background-color: #ddd;
+}
+.actions a img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+/* تنسيق القائمة العامة */
+select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* عند التمرير فوق القائمة */
+select:hover {
+    border-color: #007bff;
+    background-color: #e9f7ff;
+}
+
+/* عند تحديد الخيار */
+select:focus {
+    outline: none;
+    border-color: #0056b3;
+    background-color: #e2e6ea;
+}
+
+/* تنسيق الخيارات داخل القائمة */
+option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* تنسيق قائمة الاختيارات عند التمرير */
+select option:hover {
+    background-color: #dcdcdc;
+}
+/* تنسيق الزر */
+button {
+    background-color: #4CAF50; /* اللون الأخضر */
+    color: white; /* النص باللون الأبيض */
+    padding: 10px 20px; /* المسافة داخل الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير الحواف */
+    cursor: pointer; /* تغيير المؤشر عند التمرير فوق الزر */
+    font-size: 16px; /* حجم الخط */
+    transition: background-color 0.3s ease; /* تأثير التغيير في اللون */
+}
+
+button:hover {
+    background-color: #45a049; /* تغيير اللون عند التمرير فوق الزر */
+}
